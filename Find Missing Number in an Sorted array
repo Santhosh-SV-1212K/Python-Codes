@@ -1,0 +1,8 @@
+#Santhosh.S.V ; CSE ; Python-Codes#
+#Find a missing number in a list#
+
+a=[1,2,4,5,6,7]
+n=a[-1]
+total=(n*(n+1))//2
+array_sum=sum(a)
+print("Missing number:",total-array_sum)
