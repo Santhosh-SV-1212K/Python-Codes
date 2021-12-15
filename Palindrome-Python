@@ -1,0 +1,13 @@
+string=input()
+
+f=0
+l=len(string)-1
+
+while(f<=l):
+    if(string[f]!=string[l]):
+        print("No")
+        exit()
+    else:
+        f=f+1
+        l=l-1
+print("Palindrome")
