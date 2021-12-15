@@ -1,0 +1,6 @@
+string="Dairy Milk"
+l1=string.split()
+
+l2=l1[::-1]
+output=" ".join(l2)
+print(output)
