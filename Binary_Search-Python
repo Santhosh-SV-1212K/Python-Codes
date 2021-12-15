@@ -1,0 +1,21 @@
+n=int(input("n:"))
+search=int(input("Search:"))
+l1=[]
+for i in range(n):
+    l1.append(int(input()))
+    
+f=0
+l=n-1
+
+for i in range(n):
+    mid=(f+l)//2
+    if(search > l1[mid]):
+        f=mid+1
+    elif(search==l1[mid]):
+        print("Found at ",mid+1)
+        break
+    else:
+        l=mid-1
+if(f>l):
+    print("Not found")
+        
